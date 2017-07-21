@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+# ESTANDAR
+# import json
+
+# HERRAMIENTAS EXTERNAS
+# import numpy
+
+# CONFIGURACIONES Y UTILIDADES
+# from utils import serializer_date
+
+# ERROR MANAGER
+# from requests.exceptions import ConnectionError
+
+__version__ = '0.1.0'
+
+
+def name_function(*args, **kwargs):
+    u"""
+
+    """
+    return True
+
+def lambda_handler(event, context):
+    status = name_function(event.get('key'))
+    return {'status': status}
+
+# =============================================================================
+# DATOS DE PRUEBA.
+# =============================================================================
+# data = {
+#   "key": "value"
+# }
+
+# =============================================================================
+# CHECK RESPONSE
+# =============================================================================
+# check_response(data=data)

@@ -1,0 +1,35 @@
+===============================
+$function_name
+===============================
+
+-------------------------------
+Invocación
+-------------------------------
+Para efecutar un test y llamar la función desde un servidor autenticado, usar:
+
+.. code-block :: python
+
+    import json
+    import boto3
+
+    data = {
+        "key" : "value"
+    }
+
+    client = boto3.client('lambda')
+
+    response = client.invoke(
+            FunctionName="arn:aws:lambda:$aws_region:242956272159:function:$function_name",
+            InvocationType='Event',
+            Payload=json.dumps(data)
+        )
+    print("Response: {}".format(json.loads(response['Payload'].read())))
+
+
+La respuesta obtenida será un diccionario con la información complementaria del perfil buscado.
+
+    .. code-block :: python
+
+        {
+            u'status': True
+        }
