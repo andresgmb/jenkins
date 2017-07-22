@@ -1,0 +1,56 @@
+apply plugin: 'java'
+
+/*
+ * Se buscar información solo desde el repositorio principal de Maven para Java.
+ * Es algo así como Pypi para Python.
+ * Buscar paquetes en:
+ * https://search.maven.org
+ * https://mvnrepository.com
+ */
+repositories {
+    mavenCentral()
+}
+
+/*
+ * Maneja las dependencias del proyecto. Podrían estar todas
+ * en el mismo objeto 'compile', pero se separó por tipo de
+ * librería, según origen y funcionalidad.
+ */
+dependencies {
+    // Librerías para utilizar funciones y objetos de AWS Lambda en Java.
+    compile (
+        'com.amazonaws:aws-lambda-java-core:1.1.0',
+        'com.amazonaws:aws-lambda-java-events:1.1.0'
+    )
+
+    // Requisito del siguiente set de librerías.
+    compile (
+        'com.fasterxml.jackson.core:jackson-core:2.9.0.pr3',
+        'com.fasterxml.jackson.core:jackson-annotations:2.9.0.pr3',
+        'com.fasterxml.jackson.core:jackson-databind:2.9.0.pr3'
+    )
+
+    // Librerías para parsear y crear JSON.
+    compile (
+        'org.codehaus.jackson:jackson-mapper-asl:1.9.13',
+        'org.codehaus.jackson:jackson-core-asl:1.9.13'
+    )
+
+    // Llamadas HTTP estándar.
+    compile (
+        'org.apache.httpcomponents:httpclient:4.5.3',
+        'commons-httpclient:commons-httpclient:3.1'
+    )
+    // Incluye todos los JAR de la carpeta 'jars'
+    compile fileTree(dir: 'jars', include: '*.jar')
+}
+
+task buildZip(type: Zip) {
+    from compileJava
+    from processResources
+    into('lib') {
+        from configurations.runtime
+    }
+}
+
+build.dependsOn buildZip
