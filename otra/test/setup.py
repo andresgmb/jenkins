@@ -1,4 +1,4 @@
-# Archivo de prueba
+# Archivo de prueba.
 import sys
 sys.path.append('')
 

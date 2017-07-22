@@ -15,7 +15,7 @@ from argparse import ArgumentParser
 from argparse import RawDescriptionHelpFormatter
 import traceback
 
-# HERRAMIENTAS EXTERNAS
+# HERRAMIENTAS EXTERNAS.
 import boto3
 from tabulate import tabulate
 
