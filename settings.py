@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from secrets import CONFIG
 # ==============================================================================
-# CONFIGURACIONES DE COLORES.
+# CONFIGURACIONES DE COLORES..
 # ==============================================================================
 HEADER = '\033[96m'
 OKBLUE = '\033[94m'

@@ -12,7 +12,7 @@ A.B.C
 
 A: Cambio sustancial en la estructura o en la manera de operar la aplicación.
 B: Nuevas carácteristicas, nuevas funcionalidades y conjunto de grandes correcciones.
-C: Correcciones de bugs de la serie B...
+C: Correcciones de bugs de la serie B....
 -->
 
 # Change Log
