@@ -1,170 +1,211 @@
-# Lego Lambda...
-# Probando Git DEV
-Conceptos que lo definen: Bloques... chinos... minions... mitosis... esclavos... tábanos...
-
-<img src="https://s-media-cache-ak0.pinimg.com/736x/b9/bb/bf/b9bbbf0385a6e554e737adb67689ed46.jpg" height="400">
-<img src="https://i0.wp.com/melissaeastondesign.com/blog/wp-content/uploads/2012/03/Lego_PatentDrawing1.jpg" height="400">
-
-## Aarnel Validation - Cálculo de proximidad fónetica de dos strings
-Se pasan dos string y se calcula su proximidad fonética usando los métodos de:
-la distancia Levenshtein (LV) y Teoria de Metaphone (ME)
-
-[**README**](https://github.com/destacame/legolambda/blob/master/aarnel_validation/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/aarnel_validation/CHANGELOG.md)
-
-## Aguas Nuevas  - Extracción de información del webservice de Aguas Nuevas
-Consulta y extracción de información usando post como protocolo.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/aguas_nuevas/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/aguas_nuevas/CHANGELOG.md)
-
-## Check geo distance - Calculo de distancia
-Obtiene la distancia entre dos direcciones dadas, haciendo uso de la Api de
-Google Maps.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/check_geo_distance/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/check_geo_distance/CHANGELOG.md)
-
-## Direcciones - Cálculo de coordenadas dadas las direcciones usando Google Maps API
-Obtiene las coordenadas de un grupo de direcciones dadas usando el Api de Google
-Maps, parámetros de entrada y salida: listas de diccionario.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/get_coordinates/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/get_coordinates/CHANGELOG.md)
-
-## Enel  - Extracción de información del webservice de Enel.
-Consulta y extracción de información consultando el webservice de la empresa Enel.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/enel/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/enel/CHANGELOG.md)
-
-## Extractor Bridge  - Extracción de información de webservice que pasan por VPN
-Consulta y extracción de información, respuesta se envía a función Lambda: Post-Processor.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/extractor_bridge/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/extractor_bridge/CHANGELOG.md)
-
-## GetAddressBlock  - Obtención de ID de cuadra desde Rserve
-Obtiene el identificador de una cuadra, en base a un set de coordenadas y datos de una región y comuna. Envía el resultado a la REST API de Destácame.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/GetAddressBlock/README.md)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/GetAddressBlock/CHANGELOG.md)
-
-## HTTP_GET  - Envío de información usando el protocolo HTTP - GET
-Consulta y extracción de información usando get como protocolo.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/http_get/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/http_get/CHANGELOG.md)
-
-## HTTP_POST  - Envío de información usando el protocolo HTTP - POST
-Consulta y extracción de información usando post como protocolo.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/http_post/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/http_post/CHANGELOG.md)
-
-## Post-Processor
-Procesa todos los datos despues de ser obtenidos por los extractores y scrapers.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/bills_procesor/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/bills_procesor/CHANGELOG.md)
-
-## Previred
-Verificación de las credenciales de acceso al portal de Previred.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/previred/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/previred/CHANGELOG.md)
-
-## PuntoPagos - Creación de transacción
-Invocación de la API de PuntoPagos para crear el registro de una transacción. Devuelve la URL a la que se debe redirigir al usuario al momento de realizar el pago.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/puntopagos/README.md)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/puntopagos/CHANGELOG.md)
-
-## Recarga Facil
-Obtiene el tipo de compañia de un número de usuario.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/recarga_facil/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/recarga_facil/CHANGELOG.md)
-
-## Redfacil
-Inyección de datos y levantamiento de portal de pagos webpay para recarga de celulares.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/redfacil/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/redfacil/CHANGELOG.md)
-
-## Registro Civil
-Verificación de la Cédula de Identidad a través del registro civil.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/registro_civil/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/registro_civil/CHANGELOG.md)
-
-## Reporte Comercial
-Obtención de los datos del reporte comercial de chile.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/financial_report_cl/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/financial_report_cl/CHANGELOG.md)
-
-## Resuelve - Financial Enterprise
-Obtención de las instituciones financieras en se puede eliminar la deuda por medio de Resuelve.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/resuelve_financial_enterprise/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/resuelve_financial_enterprise/CHANGELOG.md)
-
-## Servicio de Impuestos Internos
-Verificación de las credenciales de acceso al portal SII.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/sii/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/sii/CHANGELOG.md)
-
-## Sinacofi
-Obtiene el detalle del perfil a través del webservices de sinacofi.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/sinacofi/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/sinacofi/CHANGELOG.md)
-
-## Sinacofi - Reporte Financiero
-Obtiene el reporte financiero de un perfil a través del webservices de sinacofi.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/financial_report_cl/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/financial_report_cl/CHANGELOG.md)
-
-## SOAP
-Consultas SOAP
-
-[**README**](https://github.com/destacame/legolambda/blob/master/soap/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/soap/CHANGELOG.md)
-
-## Unired
-Inyección de datos y levantamiento de portal de pagos webpay para pago de cuentas de servicios.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/unired/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/unired/CHANGELOG.md)
-
-## Unired - Recuperación de Montos Adeudados
-Obtiene los valores adeudados de las cuentas de servicios mediante el portal de pagos de unired.
-
-[**README**](https://github.com/destacame/legolambda/blob/master/unired_checker/README.rst)
-
-[**CHANGELOG**](https://github.com/destacame/legolambda/blob/master/unired_checker/CHANGELOG.md)
+# Jenkins – Instalacion y logica de funciones Lambda
+
+
+## 1. Instalacion Jenkins [![N|Solid](http://i.imgur.com/2WRpzsb.png)]
+
+Jenkins corre sobre un servidor Linux, y se recomienda con requerimientos minimos 1 GB ram y 10 GB de almacenamiento, estos requerimientos varian según las actividades que pensemos operar alli. Una vez tengamos la maquina preparada, instalar:
+
+  - **Python(Verificar que pip este instalado y actualizado)**
+  - **Virtualenv:**
+    ```sh
+    $ sudo pip install virtualenv
+    ```
+  - **Git:**
+    ```sh
+    $ sudo apt-get update
+    $ sudo apt-get install git
+    ```
+  - **Java:**
+    ```sh
+    $ sudo apt-get update
+    $ sudo apt-get install openjdk-8-jdk
+    $ java -version # Solo para verificar si quedo instalado
+    $ vim /etc/profile # Abre archivo para setear JAVA_HOME
+    ```
+    Al final del alrchivo escribir:
+    ```sh
+    JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+    export JAVA_HOME
+    export PATH=$PATH:$JAVA_HOME/bin
+    ```
+    Guardar y salir, luego:
+    ```sh
+    $ source /etc/profile # Para activar sin reiniciar, comprobar con echo $JAVA_HOME
+    ```
+  - **Jenkins:**
+    ```sh
+    $ sudo apt-get update
+    $ sudo wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
+    $ sudo apt-get update
+    $ sudo apt-get install jenkins
+    $ sudo service jenkins status # Para verificar si ya esta todo Ok
+    ```
+  - **AWS Cli:**
+    ```sh
+    $ sudo pip install awscli
+    $ aws --version # Verifica que se instalo y retorna la version instalada
+    $ aws configure # Esto nos solicita lo siguiente
+       AWS Access Key ID [None]: # AKIAIOSFODNN7EXAMPLE
+       AWS Secret Access Key [None]: # wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY  
+       Default region name [None]: # us-west-2  
+       Default output format [None]: # json
+    ```
+  - **Hub:**
+    ```sh
+    $ sudo dnf install hub
+    $ hub version # Verifica que se instalo y retorna la version instalada
+    ```
+  - **zip unzip:**
+    ```sh
+    $ sudo apt-get update
+    $ sudo apt-get install zip unzip
+    ```
+  - **Gradle:**
+    ```sh
+    $ sudo apt-get update
+    $ wget https://services.gradle.org/distributions/gradle-3.4.1-bin.zip
+    $ sudo mkdir /opt/gradle
+    $ sudo unzip -d /opt/gradle gradle-3.4.1-bin.zip
+    $ export PATH=$PATH:/opt/gradle/gradle-3.4.1/bin
+    $ gradle -v  # Verifica que se instalo y retorna la version instalada
+    ```
+  - **Clave SSH para Git (Hacerlo con usuario Jenkins):**
+    ```sh
+    $ cd ~/.ssh/
+    $ ssh-keygen # Eligir si es id_rsa u otro archivo y elegir una clave, esto genera dos archivos, privado y publico
+    $ cat id_rsa.pub # Copiar el contenido que arroja por consola
+    ```
+    Ir a GitHub y pegar este contenido cuando generes un SSH nuevo
+  - **Configurar GnuPG para encriptar archivos secrets:**
+  
+    Este proceso se lleva acabo desde el servidor Jenkins con el usuario jenkins, si el servidor no cuenta con suficiente memoria RAM no podra generar una llave de 3072 bits, dado el caso generarla en otro computador y exportar ambas claves (publica y privada) e importarlas en el servidor.
+    ```sh
+    $ gpg --gen-key # Generar claves publicas y privadas
+       Tipo: Elegir opcion 2 DSA and Elgamal
+       Longitud de bits: 3072 (Si se tiene un equipo con poca memoria no va a soportar los 3072)
+       Expira: 0 (Nunca expira)
+       Nombre: Destacame-Jenkins
+       Correo: destacame@destacame.cl
+       Comentario: Usado para cifrar el secret
+       Enter passphrase (Y confirmar): ******
+    $ gpg --list-keys # Ver la lista de las claves y copiar el Id de la llave publica
+    $ gpg --output publickey.gpg --export 9AE482C0 # 9AE482C0 es el Id de la llave publica
+    ```
+    Una vez generado el archivo publickey.gpg, distribuirlo a todo el que lo requiera (Esta llave solo sirve para encriptar, no representa ninguna vulnerabilidad el que sea de dominio publico), dentro del repositorio en la carpeta template se dejara una copia de la llave. El usuario que lo implemente debera hacer lo siguiente:
+    ```sh
+    $ gpg --import publickey.gpg   
+    $ gpg --encrypt --recipient 9AE482C0 secrets.json # 9AE482C0 es el Id de la llave publica (gpg --list-keys para ver)
+    ```
+  - **Instalar Plugin:**
+      - Ir a Manage Jenkins -> Manage Plugins -> Available
+      - Buscar he instalar los siguientes plugins (Algunos vienen por defecto):
+          - AnsiColor 
+          - build timeout plugin 
+          - Conditional BuildStep 
+          - Credentials Plugin 
+          - Git plugin 
+          - GitHub Plugin 
+          - GitHub Branch Source Plugin 
+          - GitHub Integration Plugin 
+          - GitHub Pull Request Builder 
+          - Javadoc Plugin 
+          - JUnit Plugin 
+          - Safe Restart Plugin 
+          - Slack Notification Plugin 
+          - Slack Upload Plugin 
+          - Workspace Cleanup Plugin 
+   - **Configurar Salck:**
+      - Ir a Manage Jenkins -> Configure System -> Global Slack Notifier Settings
+      - Llenar los campos:
+          - Team Subdomain: destacame
+          - Integration Token Credential ID: Aggregar una credencial tipo secret, con los siguientes valores; Scope: Global, Secret: Token generado en Slack, ID: destacame, Description: SlackToken
+          - Chanel: #Jenkins
+      - Hacer Test Connection y verificar en Slack en el canal Jenkins tiene un mensaje de prueba satisfactorio
+
+## 2. Configuracion GitHub [![N|Solid](http://i.imgur.com/6D60sxm.png)]
+
+En GitHub se deben hacer las siguientes configuraciones:
+
+  - destacame/legolambda→ Settings → Integrations & services → Add service. Alli buscar Jenkins (GitHub plugin) y en el campo Jenkins hook url colocar la direccion del servidor Jenkins, ejemplo; http://serveramazon.com:8080/github-webhook/  
+  - En https://github.com/settings/profile de destacame, ir a Personal access tokens → Generate new token. El token que genere va a ser usado dentro de la logica del Script de Jenkins, para modificar los status con iconos dentro de GitHub.
+  - En https://github.com/settings/profile de destacame, ir a SSH and GPG keys → New SSH key, de titulo ponle algo como “jenkins” y en key colocar el ssh-rsa generado dentro de Jenkis.
+  - En el proyecto se deben tener 3 ramas; master, dev y qa
+
+
+## 3. Configuracion Slack [![N|Solid](http://i.imgur.com/iMQlwBw.png)]
+
+En Slack se deben hacer las siguientes configuraciones:
+
+  - Crear un canal llamado "#Jenkins"
+  - Ir a https://destacame.slack.com/apps/A0F7VRFKN-jenkins-ci y darle "Add Configuration", alli llener los siguientes campos:
+    - Post to Channel: #Jenkins (O el nombre que le distes en el paso anterior)
+    - Token: Este es autogenerado, copiarlo y usarlo en Jenkins en el plugin de slack
+    - Descriptive Label: destacame
+    - Customize Name:  destacame
+    
+## 4. Logica Jenkins [![N|Solid](http://i.imgur.com/jrKbgzp.png)]
+El flujo de trabajo consiste en probar automaticamente a traves de Jenkins todas la funciones que se suban al repositorio GitHub y hacer Pull Request a su siguiente rama en caso de que la prueba sea exitosa. Si el Pull Request generado por Jenkins es aceptado en la rama principal (master) automaticamente se hace el despligue de crear o actualizar la funcion en aws lambda. A continuacion se detalla el proceso.
+
+ ![N|Solid](http://i.imgur.com/BCLeAPg.png)
+
+Este proceso se hace entre las ramas QA a Dev y Dev a Master, ver imagen:
+
+ ![N|Solid](http://i.imgur.com/yB7X2Ua.png)
+
+## 5. Estructura de carpetas en el repositorio [![N|Solid](http://i.imgur.com/tPvWxEr.png)]
+Las funciones lambda estan en direcctorio con multiples carpetas y archivos, la siguiente es su estructura:
+
+ ![N|Solid](http://i.imgur.com/KuPE8SU.png)
+
+Los secrets.json.gpg no son obligatorios, si una funcion no requiere de este archivo simplemente no incluir.
+
+## 6. Configuraciones de las tareas [![N|Solid](http://i.imgur.com/GQxl6Vi.png)]
+El proceso en general consta de 3 tareas:
+
+  - **1-Test_PR_qa_to_dev**
+      - General -> GitHub project, darle check y los campos internos llenar asi:
+          - Project url: git@github.com: destacame/legolambda.git
+          - Display name: destacame/legolambda
+      -  General -> Source Code Management, darle chek a git y los campos internos llenar asi:
+          - Repository URL: git@github.com: destacame/legolambda.git
+          - Credentials: Agregar las credenciales del usuario destacamebot en modo Global
+          - Branch Specifier: refs/heads/qa
+          - Repository browser: Seleccionar githubweb
+          - URL: https://github.com/destacame/legolambda/tree/qa
+      - General -> Build Triggers, darle chek a GitHub hook trigger for GITScm polling.
+      - General -> Build Environment, darle chek a Delete workspace before build starts
+      - General -> Build Environment, darle chek a Color ANSI Console Output y seleccionar en ANSI color map gnome-terminal
+      - General -> Build, en "Add build step" seleccionar "Execute shell". Este Shell es el que genera todo el trabajo. Esto evalua cada una de las funciones agregadas y/o modificadas en la rama qa, si el resultado es exitoso hace un pull request a la rama dev. Tambien agrega estatus a los commits de GitHub en forma de iconos.
+      - General -> Post-build Actions, en "Add post-build actions" seleccionar Slack Notifications, alli seleccionar la notificaciones que deseamos recibir por slack.
+
+  - **2-PR_dev_to_master**
+      - General -> GitHub project, darle check y los campos internos llenar asi:
+          - Project url: git@github.com:destacame/legolambda.git
+          - Display name: destacame/legolambda
+      -  General -> Source Code Management, darle chek a git y los campos internos llenar asi:
+          - Repository URL: git@github.com:destacame/legolambda.git
+          - Credentials: Agregar las credenciales del usuario destacamebot en modo Global
+          - Branch Specifier: refs/heads/dev
+          - Repository browser: Seleccionar githubweb
+          - URL: https://github.com/destacame/legolambda/tree/dev
+      - General -> Build Triggers, darle chek a GitHub hook trigger for GITScm polling.
+      - General -> Build Environment, darle chek a Delete workspace before build starts
+      - General -> Build Environment, darle chek a Color ANSI Console Output y seleccionar en ANSI color map gnome-terminal
+      - General -> Build, en "Add build step" seleccionar "Execute shell". Este Shell es el que genera todo el trabajo. Esto evalua cada una de las funciones aceptadas en el pull request de la rama qa a dev, si el resultado es exitoso hace un pull request a la rama master. Tambien agrega estatus a los commits de GitHub en forma de iconos.
+      - General -> Post-build Actions, en "Add post-build actions" seleccionar Slack Notifications, alli seleccionar la notificaciones que deseamos recibir por slack.
+
+  - **3-DP_master_to_aws**
+      - General -> GitHub project, darle check y los campos internos llenar asi:
+          - Project url: git@github.com:destacame/legolambda.git
+          - Display name: destacame/legolambda
+      -  General -> Source Code Management, darle chek a git y los campos internos llenar asi:
+          - Repository URL: git@github.com:destacame/legolambda.git
+          - Credentials: Agregar las credenciales del usuario destacamebot en modo Global
+          - Branch Specifier: refs/heads/master
+          - Repository browser: Seleccionar githubweb
+          - URL: https://github.com/destacame/legolambda/tree/master
+      - General -> Build Triggers, darle chek a GitHub hook trigger for GITScm polling.
+      - General -> Build Environment, darle chek a Delete workspace before build starts
+      - General -> Build Environment, darle chek a Color ANSI Console Output y seleccionar en ANSI color map gnome-terminal
+      - General -> Build, en "Add build step" seleccionar "Execute shell". Este Shell es el que genera todo el trabajo. Esto evalua cada una de las funciones aceptadas en el pull request de la rama dev a master, si el resultado es exitoso evalua en aws si las funciones son nuevas o si ya existen y según se el caso el script crea o actualiza la funcion aws lambda. El metodo para determinar los parametros del deploy los toma del Makefile que se encuentra en la funcion.
+      - General -> Post-build Actions, en "Add post-build actions" seleccionar Slack Notifications, alli seleccionar la notificaciones que deseamos recibir por slack.

@@ -1,17 +1,17 @@
 # ==============================================================================
 # DATOS DEL PROYECTO
 # ==============================================================================
-PROJECT = GetAddressBlock
-FUNCTION_NAME = GetAddressBlock
-DESCRIPTION = "Obtención del identificador de cuadra de un set de coordenadas."
-AWS_REGION = sa-east-1
+PROJECT = $project
+FUNCTION_NAME = $function_name
+DESCRIPTION = "$description"
+AWS_REGION = $aws_region
 
 # ==============================================================================
 # CONFIGURACIONES ESTATICAS
 # ==============================================================================
 FUNCTION_HANDLER = lambda_handler
 LAMBDA_ROL = arn:aws:iam::242956272159:role/lambda_basic_execution
-RUNTIME_VERSION = java8
+RUNTIME_VERSION = java$runtime_version
 TIMEOUT = 120
 MEMORY_SIZE = 128
 

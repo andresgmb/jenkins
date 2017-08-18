@@ -1,0 +1,26 @@
+/* package cl.destacame;
+ * 
+ * import ;
+ */
+
+
+/*
+ * Descripcion de la clase
+ *
+ * @author  Creador
+ * @version 1.0
+ * @since   yyyy-mm-dd
+ */
+public class NombreFuncion { 
+
+    /*
+     * Descripcion de la funcion
+     *
+     * @param   Tipo parametros
+     * @return  Tipo retorno
+     */
+
+	public void task() {
+	}
+
+}
