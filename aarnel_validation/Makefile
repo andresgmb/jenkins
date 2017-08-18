@@ -1,9 +1,9 @@
 # ==============================================================================
 # DATOS DEL PROYECTO
 # ==============================================================================
-PROJECT = otra
-FUNCTION_NAME = otra
-DESCRIPTION = "Otro método de prueba de Andres"
+PROJECT = aarnel_validation
+FUNCTION_NAME = aarnel_validation
+DESCRIPTION = "Método que permite la comparación fonética de dos strings."
 AWS_REGION = sa-east-1
 
 # ==============================================================================

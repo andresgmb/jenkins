@@ -10,7 +10,6 @@ import com.amazonaws.services.lambda.runtime.LambdaLogger;
  * Clase que implementa el handler de la función de AWS Lambda.
  * Su función principal consiste en buscar la cuadra a la que
  * pertenece un set de coordenadas...
- *
  * @author  Gabriel Ruiz
  * @version 1.0
  * @since   2017-05-29

@@ -5,7 +5,7 @@ $function_name
 -------------------------------
 Invocación
 -------------------------------
-Para efecutar un test y llamar la función desde un servidor autenticado, usar:
+Para efecutar un test y llamar la función desde un servidor autenticado, Usar:
 
 .. code-block :: python
 

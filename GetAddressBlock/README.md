@@ -1,4 +1,4 @@
-# Obtención del identificador de cuadra de un set de coordenadas.
+# Obtención del identificador de cuadra de un set de coordenadas...
 
 GetAddressBlock se conecta a un servicio de R (Rserve) es un servidor de Destácame, al que envía las coordenadas de una dirección, el CUT de la comuna y el identificador de la Región que se realizará la búsqueda. Recibe como respuesta un identificador de cuadra, que luego envía, junto con los otros datos de la dirección, a la API de Destácame para actualizar una dirección.
 

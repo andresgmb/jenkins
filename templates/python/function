@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# ESTANDAR.
-# import json..
+# ESTANDAR
+# import json.
 
 # HERRAMIENTAS EXTERNAS
 # import numpy
@@ -25,7 +25,7 @@ def lambda_handler(event, context):
     return {'status': status}
 
 # =============================================================================
-# DATOS DE PRUEBA.
+# DATOS DE PRUEBA
 # =============================================================================
 # data = {
 #   "key": "value"
