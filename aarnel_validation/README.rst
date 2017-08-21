@@ -1,5 +1,5 @@
 ======================================================================
-Aarnel validation: cálculo de proximidad fonética de dos strings.
+Aarnel validation: cálculo de proximidad fonética de dos strings..
 ======================================================================
 
 -------------------------------
