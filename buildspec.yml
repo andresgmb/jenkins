@@ -3,15 +3,7 @@ version: 0.2
 env:
   variables:
       HOLA : 'Prueba'
-      HEADER : '\033[96m'
-      OKBLUE : '\033[94m'
-      OKGREEN : '\033[92m'
-      WARNING : '\033[93m'
-      FAIL : '\033[91m'
-      END : '\033[0m'
-      BOLD : '\033[1m'
-      UNDERLINE : '\033[4m'
-      PWD_DIR : pwd
+      AWS_REGION : us-west-2
 
 phases:
   install:
@@ -19,13 +11,14 @@ phases:
         python: 3.7
   pre_build:
     commands:
-      - echo $(HEADER)"Login en AWS ECR"$(END)
-      - echo $(HEADER)"---------------------------------------------"$(END)
+      - apt-get update
       - echo $HOLA
-      - echo ---------------------------------------------------
       - echo $hija
       - echo $cedula
-      - apt-get update
+      - echo ---------------------------------------------------
+      - aws --version
+      - $(aws ecr get-login --region $AWS_REGION --no-include-email)
+      - echo ---------------------------------------------------
   build:
     commands:
       - echo Empezando a construir `date`
