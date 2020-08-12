@@ -12,6 +12,9 @@ phases:
     commands:
       - echo ---------------------------------------------------
       - echo $HOLA
+      - echo ---------------------------------------------------
+      - echo $hija
+      - echo $cedula
       - apt-get update
   build:
     commands:
