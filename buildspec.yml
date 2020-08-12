@@ -3,6 +3,15 @@ version: 0.2
 env:
   variables:
       HOLA : 'Prueba'
+      HEADER : '\033[96m'
+      OKBLUE : '\033[94m'
+      OKGREEN : '\033[92m'
+      WARNING : '\033[93m'
+      FAIL : '\033[91m'
+      END : '\033[0m'
+      BOLD : '\033[1m'
+      UNDERLINE : '\033[4m'
+      PWD_DIR : pwd
 
 phases:
   install:
@@ -10,7 +19,8 @@ phases:
         python: 3.7
   pre_build:
     commands:
-      - echo ---------------------------------------------------
+      - echo $(HEADER)"Login en AWS ECR"$(END)
+      - echo $(HEADER)"---------------------------------------------"$(END)
       - echo $HOLA
       - echo ---------------------------------------------------
       - echo $hija
