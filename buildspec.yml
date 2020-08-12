@@ -11,6 +11,7 @@ phases:
   pre_build:
     commands:
       - echo Esto es una prueba
+      - echo ${{ HOLA }}
       - sudo apt-get update
   build:
     commands:
