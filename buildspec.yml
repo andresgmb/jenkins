@@ -10,9 +10,9 @@ phases:
         python: 3.7
   pre_build:
     commands:
-      - echo Esto es una prueba
-      - echo ${{ HOLA }}
-      - sudo apt-get update
+      - echo ---------------------------------------------------
+      - echo $HOLA
+      - apt-get update
   build:
     commands:
       - echo Empezando a construir `date`
