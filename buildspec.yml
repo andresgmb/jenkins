@@ -1,19 +1,17 @@
-version: 0.1
+env:
+  variables:
+      HOLA : 'Prueba'
 
 phases:
   pre_build:
     commands:
-      - echo Instalo lo basico
+      - echo Esto es una prueba
       - sudo apt-get update
-      - sudo pip install virtualenv
   build:
     commands:
       - echo Empezando a construir `date`
       - export WORKSPACE=`pwd`
-      - echo $WORKSPACE    
+      - echo $WORKSPACE
   post_build:
     commands:
       - echo Construccion lista `date`
-# artifacts:
-#   files:
-#     - core/target/scala-2.11/core_2.11-1.0.0.jar
