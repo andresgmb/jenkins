@@ -11,13 +11,16 @@ phases:
         python: 3.7
   pre_build:
     commands:
-      - apt-get update
+      # - apt-get update
       - echo $HOLA
       - echo $hija
       - echo $cedula
       - echo ---------------------------------------------------
       - sh hola.sh
+      - echo ---------------------------------------------------
+      - make all
       - aws --version
+      - make -v
       # - $(aws ecr get-login --region $AWS_REGION --no-include-email)
       - echo ---------------------------------------------------
   build:
