@@ -16,14 +16,7 @@ phases:
       - echo $hija
       - echo $cedula
       - echo ---------------------------------------------------
-      - printf '%s\n' \
-      'base_url=https://app.pandora.destacame.cl/external/api' \
-      'recaptcha_key=6Lcmc9IUAAAAAIkWWRIqvCFVPmwIU1FMgf8zsn0G' \
-      'API_GATEWAY= https://api.destacame.cl' \
-      'target_api_gateway=ares' \
-      'AWS_BUCKET_NAME="nuxt.ares.destacame.cl"' \
-      'AWS_CLOUDFRONT="UPPERCASE"' \
-      'AWS_DEFAULT_REGION="sa-east-1"' > .env.andres
+      - printf '%s\n' 'base_url=https://app.pandora.destacame.cl/external/api' 'recaptcha_key=6Lcmc9IUAAAAAIkWWRIqvCFVPmwIU1FMgf8zsn0G' 'API_GATEWAY= https://api.destacame.cl' 'target_api_gateway=ares' 'AWS_BUCKET_NAME="nuxt.ares.destacame.cl"' 'AWS_CLOUDFRONT="UPPERCASE"' 'AWS_DEFAULT_REGION="sa-east-1"' > .env.andres
       - echo ---------------------------------------------------
       - cat .env.andres
       - echo ---------------------------------------------------
