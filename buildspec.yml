@@ -16,8 +16,9 @@ phases:
       - echo $hija
       - echo $cedula
       - echo ---------------------------------------------------
+      - sh hola.sh
       - aws --version
-      - $(aws ecr get-login --region $AWS_REGION --no-include-email)
+      # - $(aws ecr get-login --region $AWS_REGION --no-include-email)
       - echo ---------------------------------------------------
   build:
     commands:
