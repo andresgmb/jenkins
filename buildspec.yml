@@ -16,18 +16,21 @@ phases:
       - echo $hija
       - echo $cedula
       - echo ---------------------------------------------------0
-      - printf '%s\n' 'base_url=https://app.pandora.destacame.cl/external/api' 'recaptcha_key=6Lcmc9IUAAAAAIkWWRIqvCFVPmwIU1FMgf8zsn0G' 'API_GATEWAY= https://api.destacame.cl' 'target_api_gateway=ares' 'AWS_BUCKET_NAME="nuxt.ares.destacame.cl"' 'AWS_CLOUDFRONT="UPPERCASE"' 'AWS_DEFAULT_REGION="sa-east-1"' > .env.andres
+      - printf '%s\n' 'base_url=https://app.pandora.destacame.cl/external/api' 'recaptcha_key=6Lcmc9IUAAAAAIkWWRIqvCFVPmwIU1FMgf8zsn0G' 'API_GATEWAY= https://api.destacame.cl' 'target_api_gateway=ares' 'AWS_BUCKET_NAME="nuxt.ares.destacame.cl"' 'AWS_CLOUDFRONT="UPPERCASE"' 'AWS_DEFAULT_REGION="sa-east-1"' > andres.txt
       - echo ---------------------------------------------------
-      - cat .env.andres
+      - cat andres.txt
       - echo ---------------------------------------------------1
       - pwd
       - ls -l
       - echo ---------------------------------------------------2
+      - mv andres.txt aarnel_validation/
+      - ls -l aarnel_validation/
+      - echo ---------------------------------------------------3
       - make all
       - aws --version
       - make -v
       # - $(aws ecr get-login --region $AWS_REGION --no-include-email)
-      - echo ---------------------------------------------------3
+      - echo ---------------------------------------------------4
   build:
     commands:
       - echo Empezando a construir `date`
