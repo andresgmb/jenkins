@@ -2,8 +2,12 @@ version: 0.2
 
 env:
   variables:
-      ENV : 'Prueba'
-      AWS_REGION : us-west-2
+      BASE_URL : 'base_url=https://app.pandora.destacame.cl/external/api'
+      RECAPTCHA_KEY : 'recaptcha_key=6Lcmc9IUAAAAAIkWWRIqvCFVPmwIU1FMgf8zsn0G'
+      API_GATEWAY : 'API_GATEWAY= https://api.destacame.cl'
+      AWS_BUCKET_NAME : 'AWS_BUCKET_NAME="nuxt.ares.destacame.cl"'
+      AWS_CLOUDFRONT : 'AWS_CLOUDFRONT="UPPERCASE"'
+      AWS_DEFAULT_REGION : 'AWS_DEFAULT_REGION="sa-east-1"'
 
 phases:
   install:
@@ -16,14 +20,13 @@ phases:
       - echo $hija
       - echo $cedula
       - echo ---------------------------------------------------0
-      - printf '%s\n' $ENV $hija $cedula 'base_url=https://app.pandora.destacame.cl/external/api' 'recaptcha_key=6Lcmc9IUAAAAAIkWWRIqvCFVPmwIU1FMgf8zsn0G' 'API_GATEWAY= https://api.destacame.cl' 'target_api_gateway=ares' 'AWS_BUCKET_NAME="nuxt.ares.destacame.cl"' 'AWS_CLOUDFRONT="UPPERCASE"' 'AWS_DEFAULT_REGION="sa-east-1"' > andres.txt
+      - printf '%s\n' $BASE_URL $RECAPTCHA_KEY $API_GATEWAY $AWS_BUCKET_NAME $AWS_CLOUDFRONT $AWS_DEFAULT_REGION > aarnel_validation/andres.txt
       - echo ---------------------------------------------------
-      - cat andres.txt
+      - cat aarnel_validation/andres.txt
       - echo ---------------------------------------------------1
       - pwd
       - ls -l
       - echo ---------------------------------------------------2
-      - mv andres.txt aarnel_validation/
       - ls -l aarnel_validation/
       - echo ---------------------------------------------------3
       - make all
